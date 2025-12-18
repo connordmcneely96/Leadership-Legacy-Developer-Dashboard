@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { Sidebar } from "@/components/layout/sidebar";
 import { StarField } from "@/components/effects/star-field";
+import { ScanlineEffect, GridOverlay, VignetteEffect, HolographicGlow } from "@/components/effects/gaming-effects";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
@@ -90,6 +91,10 @@ export default function OverviewPage() {
   return (
     <div className="min-h-screen cosmic-bg">
       <StarField />
+      <ScanlineEffect />
+      <GridOverlay />
+      <VignetteEffect />
+      <HolographicGlow />
       <Sidebar />
 
       <main className="ml-60 relative z-10">
