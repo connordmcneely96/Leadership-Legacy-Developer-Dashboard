@@ -15,41 +15,40 @@ const config: Config = {
         foreground: "hsl(var(--foreground))",
         primary: {
           DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
-        },
-        secondary: {
-          DEFAULT: "hsl(var(--secondary))",
-          foreground: "hsl(var(--secondary-foreground))",
+          hover: "hsl(var(--primary-hover))",
         },
         muted: {
-          DEFAULT: "hsl(var(--muted))",
+          DEFAULT: "hsl(var(--muted-foreground))",
           foreground: "hsl(var(--muted-foreground))",
         },
-        success: {
-          DEFAULT: "hsl(var(--success))",
-          foreground: "hsl(var(--success-foreground))",
-        },
-        warning: {
-          DEFAULT: "hsl(var(--warning))",
-          foreground: "hsl(var(--warning-foreground))",
-        },
-        danger: {
-          DEFAULT: "hsl(var(--danger))",
-          foreground: "hsl(var(--danger-foreground))",
-        },
-      },
-      spacing: {
-        '1': '4px',
-        '2': '8px',
-        '3': '12px',
-        '4': '16px',
-        '6': '24px',
-        '8': '32px',
-        '12': '48px',
+        success: "hsl(var(--success))",
+        warning: "hsl(var(--warning))",
+        danger: "hsl(var(--danger))",
+        "surface-dark": "hsl(var(--surface-dark))",
+        "surface-card": "hsl(var(--surface-card))",
       },
       borderRadius: {
         sm: "8px",
         md: "12px",
+        lg: "16px",
+      },
+      boxShadow: {
+        'glass': '0 4px 24px rgba(0, 0, 0, 0.3)',
+        'glass-lg': '0 8px 32px rgba(0, 0, 0, 0.4)',
+        'cyan-glow': '0 0 20px rgba(0, 217, 255, 0.3)',
+        'cyan-glow-strong': '0 0 32px rgba(0, 217, 255, 0.5)',
+      },
+      backdropBlur: {
+        'glass': '12px',
+      },
+      letterSpacing: {
+        'tighter': '-0.02em',
+        'tight': '-0.01em',
+      },
+      animation: {
+        'pulse-cyan': 'pulse-cyan 2s ease-in-out infinite',
+        'shimmer': 'shimmer 2s linear infinite',
+        'twinkle': 'twinkle 3s ease-in-out infinite',
       },
     },
   },
