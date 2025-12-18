@@ -1,0 +1,19 @@
+name = "developer-dashboard-worker"
+main = "src/index.ts"
+compatibility_date = "2024-01-01"
+
+# D1 Database
+[[d1_databases]]
+binding = "DB"
+database_name = "developer-dashboard"
+database_id = "dev-dashboard-db"
+
+# KV Namespace
+[[kv_namespaces]]
+binding = "KV"
+id = "dev-dashboard-kv"
+
+# R2 Bucket
+[[r2_buckets]]
+binding = "R2"
+bucket_name = "developer-dashboard-storage"
